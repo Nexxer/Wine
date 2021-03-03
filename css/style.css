@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #282828;
+  width: 1110px;
+  margin: 0 auto;
+  color: #fff;
+  background-image: url("./../images/bgc.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+}
+
+.header__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.nav__menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  width: 285px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-right: none;
+  padding: 11px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__item:first-child {
+  border-left: none;
+}
+
+.navigation {
+  margin: 583px auto 150px;
+}
+
+.navigation__btn {
+  padding: 15px 30px;
+  background: #99862a;
+  border: none;
+  margin: 0 15px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.footer {
+  background-color: #998431;
+  padding: 50px 0;
+}
+
+.footer__nav:first-child {
+  border-top: 1px solid #fff;
+}
+
+.menu__item_footer {
+  border: none;
+}
+
+.item_uppercase {
+  text-transform: uppercase;
+}
+
+.social-icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 57px;
+}
+
+.social-icon {
+  border: none;
+  padding: 0;
+  width: auto;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
