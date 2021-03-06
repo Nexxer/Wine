@@ -85,7 +85,6 @@ a {
 .info {
   border: 1px solid white;
   margin: 100px auto;
-  padding: 60px 190px;
   text-align: center;
   &__title {
     font-family: Playfair Display;
@@ -93,7 +92,7 @@ a {
     font-weight: bold;
     font-size: 36px;
     line-height: 150%;
-    margin: 0;
+    margin: 60px 0 0;
     position: relative;
   }
   &__text {
@@ -105,13 +104,14 @@ a {
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
+    padding: 0 190px;
   }
   &__image {
     background-image: url("./../images/image-2.png");
     height: 160px;
     width: 160px;
     background-size: cover;
-    margin: 50px auto 0;
+    margin: 50px auto 60px;
   }
   & > hr {
     border: 1px solid #ffffff;
