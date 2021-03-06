@@ -1,10 +1,13 @@
 @import url("./normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap");
 
+html {
+  background-color: #f9f9f9;
+}
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #282828;
-  width: 1110px;
+  width: 1920px;
   margin: 0 auto;
   color: #fff;
   background-image: url("./../images/bgc.png");
@@ -12,6 +15,16 @@ body {
   background-position: top;
 }
 
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  width: 1110px;
+  margin: 0 auto;
+}
 // ! H E A D E R
 .header {
   display: flex;
@@ -71,92 +84,146 @@ body {
 //! I N F O
 .info {
   border: 1px solid white;
-  margin: 100px 0;
+  margin: 100px auto;
   padding: 60px 190px;
   text-align: center;
-}
-
-.info__title {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 150%;
-  margin: 0;
-  position: relative;
-}
-
-.info > hr {
-  border: 1px solid #ffffff;
-  width: 160px;
-  margin: 40px auto;
-}
-
-.info__text {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin: 0;
-}
-
-.info__image {
-  background-image: url("./../images/image-2.png");
-  height: 160px;
-  width: 160px;
-  background-size: cover;
-  margin: 50px auto 0;
+  &__title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    margin: 0;
+    position: relative;
+  }
+  &__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+  }
+  &__image {
+    background-image: url("./../images/image-2.png");
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    margin: 50px auto 0;
+  }
+  & > hr {
+    border: 1px solid #ffffff;
+    width: 160px;
+    margin: 40px auto;
+  }
 }
 
 //! C O L L E C T I O N
 .collection {
   background: #e6e3c4;
   color: #000;
-  display: flex;
+  padding: 80px 0;
+  &__container {
+    border-top: 1px solid #998431;
+    border-bottom: 1px solid #998431;
+    display: flex;
+    padding: 60px 0;
+  }
+
+  &__column {
+    width: 50%;
+    &:first-child {
+      padding-right: 110px;
+    }
+    &:last-child {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 500px 228px;
+      gap: 30px 30px;
+      grid-template-areas:
+        "main main"
+        "first two";
+    }
+  }
+  &__column > hr {
+    border-top: 1px solid #282828;
+    width: 160px;
+    margin: 0;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+  }
+  &__item {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #282828;
+  }
+  &__info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #282828;
+    margin: 30px 0;
+  }
+  &__button {
+    background: #998431;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+  }
+  &__main-image {
+    grid-area: main;
+  }
+  &__additional-image_first {
+    grid-area: first;
+  }
+  &__additional-image_two {
+    grid-area: two;
+  }
 }
 
-.collection > hr {
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 3px solid #e6e3c4;
+  font-size: 14px;
+  color: #282828;
+}
+table > tbody > tr > td {
+  border: 1px solid #282828;
+  padding: 10px 24px 15px 30px;
 }
 
-.collection__column {
-  width: 50%;
-}
-.collection__title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 150%;
-}
-.collection__item {
+table > tbody > tr > td > h4 {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 18px;
   line-height: 150%;
-  color: #282828;
+  margin: 0 0 5px;
 }
-.collection__info {
+
+table > tbody > tr > td > p {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 150%;
-  color: #282828;
+  margin: 0;
 }
-.collection__button {
-  background: #998431;
-  text-transform: uppercase;
-  color: #fff;
-}
-.collection__main-image {
-}
-.collection__additional-image {
-  width: 50%;
-}
+
 // ! F O O T E R
 .footer {
   background-color: #998431;
@@ -188,10 +255,4 @@ body {
 
 .contact-info {
   // margin-top: 9px;
-}
-
-a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
 }
