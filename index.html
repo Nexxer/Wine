@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,25 +9,26 @@
     <title>Винный магазин</title>
   </head>
   <body>
-    <header class="header content">
+    <header class="header content" id="header">
       <address class="header__address">
         Новокузнечный переулок 4/1
         <div class="header__phone">
-          <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+          <a href="tel:+74951234567">8 (812) 123-45-67</a>
+          
         </div>
       </address>
       <nav class="header__nav">
         <ul class="nav__menu">
-          <li class="menu__item">Каталог</li>
-          <li class="menu__item">Доставка</li>
-          <li class="menu__item">Коллекция</li>
-          <li class="menu__item">Контакты</li>
+          <li class="menu__item"><a href="#catalogue"></a>Каталог</a></li>
+          <li class="menu__item"><a href="#delivery"></a>Доставка</a></li>
+          <li class="menu__item"><a href="#collection"></a>Коллекция</a></li>
+          <li class="menu__item" ><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
 
       <div class="navigation">
         <button class="navigation__btn">винная карта</button>
-        <button class="navigation__btn">дегустация</button>
+        <button class="navigation__btn"><a href="#degustation">дегустация</a></button>
       </div>
     </header>
 
@@ -50,36 +51,35 @@
         <div class="info__image"></div>
       </section>
 
-      <section class="collection">
+      <section class="collection" id="collection">
         <div class="collection__container content">
           <div class="collection__column">
             <h2 class="collection__title">Новинки коллекций</h2>
-            <h3 class="collection__item">Март 1980 Урожай Марселя</h3>
+            <h3 class="collection__item">Март 1980 <br />Урожай Марселя</h3>
             <hr />
             <p class="collection__info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
               enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
               sit non sit sed fermentum. Felis adipiscing morbi sodales ac.
             </p>
-            <!-- !Table -->
             <table>
               <tbody>
                 <tr>
-                  <td>1980</td>
+                  <td class="table__data">1980</td>
                   <td>
                     <h4>Colli Euganei Bianco Ca' Lustra 1980</h4>
                     <p>Красочная бутылка вина из Марселя</p>
                   </td>
                 </tr>
                 <tr>
-                  <td>1980</td>
+                  <td class="table__data">1980</td>
                   <td>
                     <h4>Colli Euganei Bianco Ca' Lustra 1980</h4>
                     <p>Красочная бутылка вина из Марселя</p>
                   </td>
                 </tr>
                 <tr>
-                  <td>1980</td>
+                  <td class="table__data">1980</td>
                   <td>
                     <h4>Colli Euganei Bianco Ca' Lustra 1980</h4>
                     <p>Красочная бутылка вина из Марселя</p>
@@ -113,17 +113,34 @@
           </div>
         </div>
       </section>
+
+      <section class="degustation content" id="degustation">
+        <div class="degustation__bg-img_left"></div>
+        <div class="degustation__bg-img_right"></div>
+        <h2 class="degustation__title">Запись на дегустацию</h2>
+        <p class="degustation__info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim
+          tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non
+          sit sed fermentum.
+        </p>
+        <form class="degustation__form form">
+          <input type="text" class="form__input" required placeholder="Имя"/>
+          <input type="tel" class="form__input" required placeholder="Телефон" />
+          <input type="text" class="form__input" placeholder="Бутик на Невском 103"/>
+          <button class="form__button" type="submit" >записаться</button>
+        </form>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="content">
         <nav class="footer__nav">
           <ul class="nav__menu">
-            <li class="menu__item menu__item_footer">Главная</li>
+            <li class="menu__item menu__item_footer"><a href="#header">Главная</a></li>
             <li class="menu__item menu__item_footer">Каталог</li>
             <li class="menu__item menu__item_footer">Поставщики</li>
             <li class="menu__item menu__item_footer">Коллекция</li>
-            <li class="menu__item menu__item_footer">Дегустация</li>
+            <li class="menu__item menu__item_footer"><a href="#degustation">Дегустация</a></li>
             <li class="menu__item menu__item_footer">Коллекция 2020</li>
             <li class="menu__item menu__item_footer">Контакты</li>
           </ul>
